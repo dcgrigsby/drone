@@ -62,9 +62,9 @@ translate([0, 0, height]) {
       translate([(width - 2 * thickness) / 2 - thickness - tolerance, -tolerance, height / 4 + height / 8 - tolerance]) {
         roundedcube([thickness + 2 * tolerance, connector_length + 2 * tolerance, height/4 + 2 * tolerance]);
       }
-      /* zip-tie mount */
+      /* clip mount */
       translate([0, thickness * 2, -10]) {
-        roundedcube(size=[thickness * 1.5, thickness, 100], center=true);
+        #roundedcube(size=[thickness * 1.5, thickness, 100], center=true);
       }
       /* motor mount holes */
       translate([0, length - motor_radius, -10]) {
